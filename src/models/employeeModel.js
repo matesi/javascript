@@ -22,6 +22,12 @@ const EmployeeModel = {
   },
 
   getEmployee: async (filters) => {
+    if (
+      !filters.hasOwnProperty("uuid") &&
+      !filters.hasOwnProperty("nome") &&
+      !filters.hasOwnProperty("funcao")
+    ) {
+    }
     try {
       const query = "SELECT * FROM funcionario";
       const result = await db.query(query);
