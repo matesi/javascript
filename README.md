@@ -18,8 +18,15 @@ $ npm i
 Instalar a extensão do VS Code Rest Client
 
 
-## Rodar a aplicação
+## Rodar a aplicação com Docker (API+BD Postgres)
 
 ```bash
 $ npm run start
+```
+
+
+## Parar a aplicação com Docker (API+BD Postgres)
+
+```bash
+$ npm run stop
 ```
