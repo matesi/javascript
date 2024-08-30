@@ -1,0 +1,53 @@
+####### Funcionários
+
+###
+# listEmployees
+GET http://localhost:3000/api/employees
+
+
+
+###
+# createEmployee
+POST http://localhost:3000/api/employees/post
+Content-Type: application/json
+
+{
+    "nome": "Marcos da Silva",
+    "endereco": "Rua 13, 2110",
+    "bairro": "Centro",
+    "cep": "14100-000",
+    "telefone": "16991999999",
+    "salario": 2000,
+    "data_contrato": "2024-08-08",
+    "funcao": "Developer"
+}
+
+
+
+###
+# getEmployee
+GET http://localhost:3000/api/employees/get?uuid=1
+
+
+
+###
+# updateEmployee
+#PUT http://localhost:3000/api/employees/put/1
+# Content-Type: application/json
+
+# {
+#     "nome": "Marcos da Silva",
+#     "endereco": "Rua 13, 2110",
+#     "bairro": "Centro",
+#     "cep": "14100-000",
+#     "telefone": "16991999999",
+#     "salario": 2000,
+#     "data_contrato": "2024-08-15",
+#     "funcao": "Developer",
+# }
+
+
+
+###
+# deleteEmployee
+#DELETE http://localhost:3000/api/employees/delete/1
