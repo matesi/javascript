@@ -8,4 +8,4 @@ WORKDIR /home/node/app
 
 USER node
 
-CMD npm run start && tail -f /dev/null
+CMD npm run api && tail -f /dev/null
